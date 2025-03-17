@@ -475,7 +475,7 @@ settingsMenu.appendChild(createSettingElement(...setting_input_params));
 });
 
 const pauseResumeButton = document.createElement('button');
-pauseResumeButton.textContent = 'توقف';
+pauseResumeButton.textContent = 'Stop';
 pauseResumeButton.className = 'pause-resume-btn';
 pauseResumeButton.onclick = toggleGamePause;
 settingsMenu.appendChild(pauseResumeButton);
@@ -955,7 +955,7 @@ updateSettingsMenu();
 
 function toggleGamePause() {
 isGameToolPaused = !isGameToolPaused;
-pauseResumeButton.textContent = isGameToolPaused ? 'ادامه' : 'Pause';
+pauseResumeButton.textContent = isGameToolPaused ? 'Resume' : 'Pause';
 }
 }
 
